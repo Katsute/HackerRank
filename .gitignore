@@ -7,3 +7,5 @@ out
 Pipfile
 Pipfile.lock
 __pycache__
+
+*.exe
