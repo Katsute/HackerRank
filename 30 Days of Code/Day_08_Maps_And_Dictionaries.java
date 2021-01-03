@@ -2,7 +2,7 @@
 import java.util.*;
 import java.io.*;
 
-class Solution{
+class Day_08_Maps_And_Dictionaries {
     public static void main(String []argh){
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();

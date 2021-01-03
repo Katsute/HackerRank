@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Solution {
+public class Day_06_Review_Loops {
 
     public static void main(String[] args) {
         final Scanner scanner = new Scanner(System.in);

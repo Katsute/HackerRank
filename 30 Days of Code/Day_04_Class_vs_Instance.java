@@ -1,10 +1,10 @@
 import java.io.*;
 import java.util.*;
 
-public class Person {
+public class Day_04_Class_vs_Instance {
     private int age;	
   
-	public Person(int initialAge) {
+	public Day_04_Class_vs_Instance(int initialAge) {
 		if(initialAge >= 0)
 			age = initialAge;
 		else{
@@ -31,7 +31,7 @@ public class Person {
 		int T = sc.nextInt();
 		for (int i = 0; i < T; i++) {
 			int age = sc.nextInt();
-			Person p = new Person(age);
+			Day_04_Class_vs_Instance p = new Day_04_Class_vs_Instance(age);
 			p.amIOld();
 			for (int j = 0; j < 3; j++) {
 				p.yearPasses();
