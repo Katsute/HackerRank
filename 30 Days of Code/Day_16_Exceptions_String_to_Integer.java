@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Java_16_Exceptions_String_to_Integer {
+public class Day_16_Exceptions_String_to_Integer {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
