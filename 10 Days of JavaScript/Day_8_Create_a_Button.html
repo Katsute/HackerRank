@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            button{
+                width: 96px;
+                height: 48px;
+                font-size: 24px;;
+            }
+        </style>
+        <script>
+            var i = 1;
+            function increment(){
+                document.getElementById("btn").innerHTML = i++;
+            }
+        </script>
+    </head>
+
+    <body>
+    	<button id="btn" onclick="increment()">0</button>
+    </body>
+</html>
