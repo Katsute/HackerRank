@@ -1,0 +1,79 @@
+<!-- Enter your HTML code here -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Binary Calculator</title>
+        <style>
+            body{
+                width: 33%;
+            }
+            div#res{
+                background-color: lightgray;
+                border: solid;
+                height: 48px;
+                font-size: 20px;
+            }
+            button#btn0, button#btn1{
+                background-color: lightgreen;
+                color: brown;
+            }
+            button#btnClr, button#btnEql{
+                background-color: darkgreen;
+                color: white;
+            }
+            button#btnSum, button#btnSub, button#btnMul, button#btnDiv{
+                background-color: black;
+                color: red;
+            }
+            button{
+                width: 25%;
+                height: 36px;
+                font-size: 18px;
+                margin: 0px;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="res"></div>
+        <div id="btns">
+            <button id="btn0">0</button>
+            <button id="btn1">1</button>
+            <button id="btnClr">C</button>
+            <button id="btnEql">=</button>
+            <button id="btnSum">+</button>
+            <button id="btnSub">-</button>
+            <button id="btnMul">*</button>
+            <button id="btnDiv">/</button>
+        </div>
+
+        <script>
+            const response = document.getElementById("res");
+
+            function onButton(e){
+                let btn = e.target || e.srcElement;
+                let action = document.getElementById(btn.id).innerHTML;
+
+                switch(action){
+                    case 'C':
+                        response.innerHTML = '';
+                        return;
+                    case '=':
+                        let expression = response.innerHTML;
+                        let nums = /(\d+)/g;
+                        expression = expression.replace(nums, (m) => parseInt(match, 2));
+                        response.innerHTML = eval(expression).toString(2);
+                        return;
+                    default:
+                        response.innerHTML += action;
+                        return;
+                }
+            }
+
+            var btns = document.getElementsByTagName("button");
+            for(let btn of btns)
+                btn.onclick = onButton;
+        </script>
+    </body>
+</html>
